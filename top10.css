@@ -1,0 +1,232 @@
+#page {
+    width: 100%;
+    max-width: 1150px;
+    padding: 2%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+   	
+}
+#top {
+    width: 80%;
+    padding: 2%;
+    background-color: lightyellow;
+    margin: 0 auto;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 60px;
+}
+#title {margin-bottom: 80px;}
+#main {
+    width: 65%;
+    background-color: lightyellow;
+    border-radius: 10px;
+    display:inline-block;
+    margin-left:100px;
+    box-shadow: 10px 10px 5px #888888;
+    border-color:#f6cb43;
+    border-width: 5px;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+   	
+}
+#fb {
+    background-color: #f6cb43;
+    font-size: 25px;
+    border-radius: 10px;
+    display: inline-block;
+    padding:30px;
+    margin-left:100px;
+    font-family: 'Raleway', sans-serif;
+    vertical-align: top;
+    line-height: 50px;
+    text-decoration: none;
+    
+    
+}
+#countries {margin: 0 auto;
+padding: 10px;}
+#countries td {padding:20px;}
+
+
+#facebook {
+    display:inline-block;
+    margin-left: 5px;
+    vertical-align: top; 
+    
+}
+#logo
+{
+    display:inline-block;
+    vertical-align: top; 
+    margin-left: 70px;
+    
+}
+#sth
+{display:inline-block;
+    vertical-align: top; 
+    margin-top: 30px;
+    
+}
+
+
+body {
+    background-color: #ffdf6e;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 22px;
+    text-align: left;
+   
+    
+    
+}
+
+h1 {
+    
+    text-align: center;
+    font-size: 60px;    
+
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display:block;
+    
+   
+   }
+nav {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+    background-color: lightyellow;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+nav a { 
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #f6cb43;
+    display:block;
+    padding:20px;
+    margin:10px;
+    font-family: 'Raleway', sans-serif;
+    vertical-align: top;
+    color: black;
+    
+}
+nav a:hover {
+ background-color: purple;
+ color: white;
+}
+
+.footer {
+     
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color: #f6cb43;
+    
+    
+}
+
+
+@media all and (max-width: 1300px) {
+   
+    #main {margin-left:20px;}
+    #logo {width: 400px; }
+  
+  
+}
+@media all and (max-width: 1200px) {
+   
+   
+    #fb {margin-left: 30px;
+    padding: 10px;}
+    
+    .cntr {width: 200px;}
+    
+  
+}
+
+@media all and (max-width: 1000px) {
+    body {
+	 margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+    }
+    
+}
+@media all and (max-width: 1050px) {
+     body {
+	 margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+    }
+    nav {
+	width: 70%;
+    margin-left: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+  
+    #main { line-height: 60px; 
+      display: block;
+        margin: 0 auto;
+     margin-top: 70px;
+    
+        width:70%;}
+    #fb {display: block;
+        margin-top: 30px;
+        text-align: center;}
+    
+    #facebook{ display: block;
+        margin: 0 auto; }
+    #sth{ display: block;
+        margin: 0 auto; }
+    #logo { display: block;
+        margin: 0 auto; }
+    #top{width: 70%;
+    margin-left: 70px;
+        display: block;
+        margin: 0 auto;
+        
+ }
+    #new{margin-top: 15px;}
+   
+    
+}
+@media all and (max-width: 600px) {
+ 
+    #logo {width: 300px; }
+    
+  
+}
+@media all and (max-width: 450px) {
+ 
+    #logo {width: 250px; }
+}
+
+
+
+
+
+a:visited {color: #26004d;
+text-decoration: none;}
+
