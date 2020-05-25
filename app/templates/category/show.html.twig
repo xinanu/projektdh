@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title_category_details'|trans({'%id%': category.id|default('')}) }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Category details'|trans({'%id%': category.id|default('')}) }}</h1>
+
+
+    {% if category is defined and category|length %}
+        <dl class="dl-horizontal">
+            <dt>{{ 'label_id'|trans }}</dt>
+            <dd>{{ category.id }}</dd>
+            <dt>{{ 'Created at'|trans }}</dt>
+            <dd>{{  category.createdAt|date('Y/m/d') }}</dd>
+            <dt>{{ 'Updated at'|trans }}</dt>
+            <dd>{{ category.updatedAt|date('Y/m/d') }}</dd>
+            <dt>{{ 'label_title'|trans }}</dt>
+            <dd>{{  category.title }}</dd>
+           <p>
+            <button class="btn" type="submit"><a href="{{ url('category_edit', {id: category.id}) }}" title="{{ 'action_view'|trans }}">
+                        {{ 'Edit'|trans }}
+                        </a></button> <button class="btn" type="submit"><a href="{{ url('category_create', {id: category.id}) }}" title="{{ 'action_view'|trans }}">
+                        {{ 'Create'|trans }}
+                        </a></button> <button class="btn" type="submit">{% if not category.tasks|length %}
+                       <a href="{{ url('category_delete', {id: category.id}) }}" title="{{ 'action_delete'|trans }}">
+                           {{ 'Delete'|trans }}
+                       </a>
+                   {% endif %}
+                    </button>
+           </p>
+        </dl>
+
+        <p>
+            <a href="{{ url('category_index') }}" title="{{ 'action_back_to_list'|trans }}">
+                {{ 'Back to list'|trans }}
+            </a>
+        </p>
+
+    {% else %}
+        <p>
+            {{ 'message_item_not_found'|trans }}
+        </p>
+    {% endif %}
+{% endblock %}
+
